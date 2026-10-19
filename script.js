@@ -83,6 +83,45 @@ const PROJECTS = [
     ]
   },
   {
+    id: 'tinkerspace-digital',
+    title: 'TinkerSpace Digital Display Kiosk',
+    category: 'tools',
+    categoryLabel: 'Open Source & Smart TV Signage',
+    summary: 'Open-source digital display kiosk running 24/7 on Smart TV screens at TinkerSpace. Authored 26+ production PRs and commits, starting from early learning days with Airtable integrations and evolving it into an event signage platform with legacy TV WebKit compatibility.',
+    tags: ['React', 'Smart TV Signage', 'Airtable', 'pnpm', 'Netlify', 'Community Open Source'],
+    link: 'https://github.com/tinkerhub/tinkerspace_digital',
+    linkLabel: 'View on GitHub',
+    liveLink: 'https://tinkerspace-display.netlify.app/',
+    isInstagram: false,
+    architecture: `+-------------------------------------------------------------+
+|              TinkerSpace Smart TV Kiosk Display             |
+|   (Legacy WebKit Browser Polyfills, Room-Distance UI)       |
++-------------------------------------------------------------+
+                              |
+                              v
++-------------------------------------------------------------+
+|             React Display Orchestrator & State              |
+|  - Kanban 7-Day Week Board & Auto-Scrolling Maker Cards     |
+|  - Animated TinkerHub Mascot Behavior State Machine         |
+|  - Local Storage Resilience & Retry Fallbacks               |
++-------------------------------------------------------------+
+                              |
+                              v
++-------------------------------------------------------------+
+|             Airtable & API Ingestion Pipelines              |
+|  - Active Maker Check-in Feeds & Event Synchronizer         |
+|  - Built-in Mock Server for Offline Development             |
+|  - Automated Netlify Production CD                          |
++-------------------------------------------------------------+`,
+    highlights: [
+      'Authored 26+ production pull requests and commits in the flagship TinkerHub community repository (tinkerhub/tinkerspace_digital).',
+      'Started during early learning days by connecting Airtable before knowing React or Node, growing the codebase into a production display system.',
+      'Diagnosed and fixed fatal syntax crashes on older WebKit-based Smart TV browsers by stripping incompatible ES2020 features.',
+      'Engineered an event-driven animated TinkerHub mascot with watchdog timers, heartbeat monitors, and progressive fallback states.',
+      'Implemented a 7-column Kanban week board with stationary crossfade pagination for room-distance readability.'
+    ]
+  },
+  {
     id: 'react-native-chat',
     title: 'Real-Time Chat App (React Native)',
     category: 'mobile',
@@ -385,6 +424,11 @@ function renderProjects(filter = 'all') {
             <a href="${p.link}" target="_blank" rel="noopener" class="project-link-icon" title="${p.linkLabel}">
               ${iconSvg}
             </a>
+            ${p.liveLink ? `
+              <a href="${p.liveLink}" target="_blank" rel="noopener" class="project-link-icon" title="View Live Display">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            ` : ''}
           </div>
         </div>
 
@@ -466,6 +510,12 @@ function openProjectModal(id) {
         <span>${project.linkLabel}</span>
         ${actionIcon}
       </a>
+      ${project.liveLink ? `
+        <a href="${project.liveLink}" target="_blank" rel="noopener" class="btn btn-glass">
+          <span>View Live Display</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
+      ` : ''}
       <button class="btn btn-secondary" onclick="closeProjectModal()">Close</button>
     </div>
   `;
@@ -535,6 +585,7 @@ Imad Ibrahim — iOS Lead @ Lascade & former Head of AI Model Creation @ Alforia
 - Based in Kerala, India.
 - Mastered & leading SwiftUI/UIKit architectures, Adapty paywalls, and telemetry at Lascade.
 - Creator of Kerala's 1st realistic AI influencer/model @aswathy_achu.ai using Automatic1111 (A1111).
+- Open Source Lead for TinkerSpace Digital Display Kiosk (@ TinkerHub Foundation).
 - Built real-time WebSocket chat apps in React Native.
 Philosophy: "Coding is like playing games."
 `,
@@ -548,16 +599,21 @@ Philosophy: "Coding is like playing games."
   - Built local generative AI stacks with Automatic1111 (A1111), custom LoRAs & AI video.
   - Engineered cross-platform real-time Chat Applications in React Native with WebSockets.
 
+[2023 - Present] Open Source Lead — TinkerSpace Digital @ TinkerHub Foundation
+  - Authored 26+ production PRs in tinkerhub/tinkerspace_digital for 24/7 Smart TV signage.
+  - Started with Airtable before knowing React/Node; built mascot loops & TV WebKit polyfills.
+
 [2022 - Present] Independent Open-Source Creator
   - Over 25 GitHub repositories spanning Deno, Python, Node.js, and Swift.
 `,
     projects: () => `
 1. Aswathy Achu AI              -> Kerala's 1st realistic virtual AI influencer (@aswathy_achu.ai)
-2. Flight-Miles (Flightpoints)  -> Flagship SwiftUI app with Adapty & Mixpanel
-3. Real-Time Chat App           -> React Native WebSocket chat platform
-4. RenderKeepAlive              -> 24/7 Deno zero-cold-start cloud daemon
-5. MongoDB-Autocomplete-Search  -> Sub-50ms fuzzy suggestions over Express
-6. StockSymbolScraper           -> Screener.in financial parser & PDF engine
+2. TinkerSpace Digital Kiosk    -> Open-source Smart TV signage kiosk (TinkerHub Foundation)
+3. Flight-Miles (Flightpoints)  -> Flagship SwiftUI app with Adapty & Mixpanel
+4. Real-Time Chat App           -> React Native WebSocket chat platform
+5. RenderKeepAlive              -> 24/7 Deno zero-cold-start cloud daemon
+6. MongoDB-Autocomplete-Search  -> Sub-50ms fuzzy suggestions over Express
+7. StockSymbolScraper           -> Screener.in financial parser & PDF engine
 `,
     skills: () => `
 iOS & Native    : SwiftUI, UIKit, Swift 6.0, MVVM, Combine, CoreData, Xcode Instruments
