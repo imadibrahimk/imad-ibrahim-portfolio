@@ -124,7 +124,7 @@ const PROJECTS = [
 +-------------------------------------------------------------+`,
     highlights: [
       'Managing the architecture, release cadence, and performance across 15+ live iOS applications in the Apple App Store.',
-      'Architected the multi-tenant repository layout at Lascade-Co (D1, D2, M1, M4, M6, M8 series across car, hotel, and flight engines), maintaining high code reuse and unified deployment workflows.',
+      'Architected the multi-tenant repository layout (D1, D2, M1, M4, M6, M8 series across car, hotel, and flight engines), maintained as private enterprise codebases under company policy with high code reuse and unified deployment workflows.',
       'Core focus applications live on App Store: Flightpoints (ID: 6756680456), Hotel70 (ID: 6498233255), Rent80 (ID: 6472572506), Flights70 (ID: 6479599821), and Hotel Discounts (ID: 1575411137).',
       'Spearheaded and successfully deployed the Unified Design Space, eliminating cross-app UI fragmentation with reusable 100% pure SwiftUI components (no UIKit).',
       'Currently engineering ultra-fluid micro-interactions and tactile sensory haptic feedback to maximize session engagement and user delight.',
