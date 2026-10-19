@@ -120,7 +120,7 @@ const PROJECTS = [
 +-------------------------------------------------------------+`,
     highlights: [
       'Managing the architecture, release cadence, and performance across 15+ live iOS applications in the Apple App Store.',
-      'Core focus applications include Hotel70, Rent80, Flights70, Hotel Discounts・Booking App, and Flightpoints - Award Flights.',
+      'Core focus applications live on App Store: Flightpoints (ID: 6756680456), Hotel70 (ID: 6498233255), Rent80 (ID: 6472572506), Flights70 (ID: 6479599821), and Hotel Discounts・Booking App.',
       'Spearheaded and successfully deployed the Unified Design Space, eliminating cross-app UI fragmentation with reusable SwiftUI/UIKit components.',
       'Currently engineering ultra-fluid micro-interactions and tactile sensory haptic feedback to maximize session engagement and user delight.',
       'Optimizing revenue conversion funnels with dynamic remote Adapty paywalls and deep multi-provider telemetry pipelines.'
@@ -638,7 +638,7 @@ Philosophy: "Coding is like playing games."
     experience: () => `
 [2025 - Present] iOS Lead — 15+ App Store Fleet @ Lascade
   - Managing architecture & release cadence for 15+ live iOS travel apps on the Apple App Store.
-  - Core focus: Flightpoints - Award Flights, Hotel70, Rent80, Flights70, and Hotel Discounts.
+  - Core focus live on App Store: Flightpoints (ID: 6756680456), Hotel70 (ID: 6498233255), Rent80 (ID: 6472572506), Flights70 (ID: 6479599821).
   - Standardized the Unified Design Space (voice & shared UI components) across all 15+ apps.
   - Currently engineering ultra-fluid micro-interactions, sensory haptics, and Adapty revenue funnels.
 
@@ -656,14 +656,17 @@ Philosophy: "Coding is like playing games."
   - Over 25 GitHub repositories spanning Deno, Python, Node.js, and Swift.
 `,
     projects: () => `
-1. Flightpoints (App Store)      -> Flagship SwiftUI app with Adapty & Mixpanel (ID: 6756680456)
-2. Lascade 15+ App Store Fleet   -> Unified Design Space, fluid haptics & 15+ travel apps
-3. Aswathy Achu AI               -> Kerala's 1st realistic virtual AI influencer (@aswathy_achu.ai)
-4. TinkerSpace Digital Kiosk     -> Foundational Smart TV signage kiosk (now community maintained)
-5. Real-Time Chat App            -> React Native WebSocket chat platform
-6. RenderKeepAlive               -> 24/7 Deno zero-cold-start cloud daemon
-7. MongoDB-Autocomplete-Search   -> Sub-50ms fuzzy suggestions over Express
-8. StockSymbolScraper            -> Screener.in financial parser & PDF engine
+1. Flightpoints (App Store)      -> Flagship award travel app (App Store ID: 6756680456)
+2. Hotel70 (App Store)           -> Core hotel booking app (App Store ID: 6498233255)
+3. Rent80 (App Store)            -> Core car rental app (App Store ID: 6472572506)
+4. Flights70 (App Store)         -> Core airfare search app (App Store ID: 6479599821)
+5. Lascade 15+ App Store Fleet   -> Unified Design Space, fluid haptics & 15+ travel apps
+6. Aswathy Achu AI               -> Kerala's 1st realistic virtual AI influencer (@aswathy_achu.ai)
+7. TinkerSpace Digital Kiosk     -> Foundational Smart TV signage kiosk (now community maintained)
+8. Real-Time Chat App            -> React Native WebSocket chat platform
+9. RenderKeepAlive               -> 24/7 Deno zero-cold-start cloud daemon
+10. MongoDB-Autocomplete-Search  -> Sub-50ms fuzzy suggestions over Express
+11. StockSymbolScraper           -> Screener.in financial parser & PDF engine
 `,
     skills: () => `
 iOS & Fleet     : 15+ App Store Apps, SwiftUI, UIKit, Swift 6.0, MVVM, Combine, CoreData
