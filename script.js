@@ -86,9 +86,9 @@ const PROJECTS = [
     id: 'tinkerspace-digital',
     title: 'TinkerSpace Digital Display Kiosk',
     category: 'tools',
-    categoryLabel: 'Open Source & Smart TV Signage',
-    summary: 'Open-source digital display kiosk running 24/7 on Smart TV screens at TinkerSpace. Authored 26+ production PRs and commits, starting from early learning days with Airtable integrations and evolving it into an event signage platform with legacy TV WebKit compatibility.',
-    tags: ['React', 'Smart TV Signage', 'Airtable', 'pnpm', 'Netlify', 'Community Open Source'],
+    categoryLabel: 'Open Source & Smart TV Signage (Community Maintained)',
+    summary: 'Open-source digital display kiosk running 24/7 on Smart TV screens at TinkerSpace. Founded and architected during early learning days with Airtable integrations (26+ production PRs/commits) before transitioning to community contributors who now maintain and expand it.',
+    tags: ['React', 'Smart TV Signage', 'Airtable', 'Founding Architect', 'Community Maintained', 'Netlify'],
     link: 'https://github.com/tinkerhub/tinkerspace_digital',
     linkLabel: 'View on GitHub',
     liveLink: 'https://tinkerspace-display.netlify.app/',
@@ -114,11 +114,11 @@ const PROJECTS = [
 |  - Automated Netlify Production CD                          |
 +-------------------------------------------------------------+`,
     highlights: [
-      'Authored 26+ production pull requests and commits in the flagship TinkerHub community repository (tinkerhub/tinkerspace_digital).',
-      'Started during early learning days by connecting Airtable before knowing React or Node, growing the codebase into a production display system.',
+      'Founding contributor and initial architect: authored 26+ production pull requests and commits in tinkerhub/tinkerspace_digital.',
+      'Built during early learning days by connecting Airtable before knowing React or Node, turning a learning curve into production kiosk software.',
       'Diagnosed and fixed fatal syntax crashes on older WebKit-based Smart TV browsers by stripping incompatible ES2020 features.',
       'Engineered an event-driven animated TinkerHub mascot with watchdog timers, heartbeat monitors, and progressive fallback states.',
-      'Implemented a 7-column Kanban week board with stationary crossfade pagination for room-distance readability.'
+      'Transitioned codebase to TinkerHub community contributors, who now actively maintain, extend, and deploy the project.'
     ]
   },
   {
@@ -585,7 +585,7 @@ Imad Ibrahim — iOS Lead @ Lascade & former Head of AI Model Creation @ Alforia
 - Based in Kerala, India.
 - Mastered & leading SwiftUI/UIKit architectures, Adapty paywalls, and telemetry at Lascade.
 - Creator of Kerala's 1st realistic AI influencer/model @aswathy_achu.ai using Automatic1111 (A1111).
-- Open Source Lead for TinkerSpace Digital Display Kiosk (@ TinkerHub Foundation).
+- Founding Architect of TinkerSpace Digital Display Kiosk (now maintained by community contributors).
 - Built real-time WebSocket chat apps in React Native.
 Philosophy: "Coding is like playing games."
 `,
@@ -599,16 +599,17 @@ Philosophy: "Coding is like playing games."
   - Built local generative AI stacks with Automatic1111 (A1111), custom LoRAs & AI video.
   - Engineered cross-platform real-time Chat Applications in React Native with WebSockets.
 
-[2023 - Present] Open Source Lead — TinkerSpace Digital @ TinkerHub Foundation
-  - Authored 26+ production PRs in tinkerhub/tinkerspace_digital for 24/7 Smart TV signage.
+[2023 - 2024] Founding Contributor & Architect — TinkerSpace Digital @ TinkerHub Foundation
+  - Authored 26+ foundational PRs in tinkerhub/tinkerspace_digital for 24/7 Smart TV signage.
   - Started with Airtable before knowing React/Node; built mascot loops & TV WebKit polyfills.
+  - Handed over to community contributors who now maintain and expand the project.
 
 [2022 - Present] Independent Open-Source Creator
   - Over 25 GitHub repositories spanning Deno, Python, Node.js, and Swift.
 `,
     projects: () => `
 1. Aswathy Achu AI              -> Kerala's 1st realistic virtual AI influencer (@aswathy_achu.ai)
-2. TinkerSpace Digital Kiosk    -> Open-source Smart TV signage kiosk (TinkerHub Foundation)
+2. TinkerSpace Digital Kiosk    -> Foundational Smart TV signage kiosk (now community maintained)
 3. Flight-Miles (Flightpoints)  -> Flagship SwiftUI app with Adapty & Mixpanel
 4. Real-Time Chat App           -> React Native WebSocket chat platform
 5. RenderKeepAlive              -> 24/7 Deno zero-cold-start cloud daemon
