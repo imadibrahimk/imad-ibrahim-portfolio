@@ -28,6 +28,19 @@ A modern, high-performance personal portfolio website built with semantic HTML5,
 - **Interactive CLI Terminal**: macOS-style developer console supporting commands (`help`, `about`, `experience`, `projects`, `skills`, `contact`, `hire`).
 - **Interactive Ambient Canvas**: Dynamic particle constellation network with subtle mouse responsiveness.
 - **Contact & Communication**: One-click email copy with toast feedback, direct mailto triggers, and social badges (GitHub, LinkedIn, StackOverflow).
+- **Brand Identity & Monogram ("II")**: Custom-engineered vector monogram logo (`assets/logo.svg`), browser favicon (`assets/favicon.svg`), and high-res Apple-style squircle brand assets (`assets/logos/`) representing Imad Ibrahim with dual architectural pillars and a radiant cyan-to-violet gradient.
+
+---
+
+## 🎨 Brand & Logo Identity
+
+| Asset | File | Description |
+|---|---|---|
+| **Scalable Vector Logo** | [`assets/logo.svg`](assets/logo.svg) | Full 512×512 SVG vector emblem with Apple squircle curvature & neon gradient glow |
+| **Browser Favicon** | [`assets/favicon.svg`](assets/favicon.svg) | High-contrast 64×64 SVG vector icon for desktop & mobile browser tabs |
+| **Apple Squircle Render** | [`assets/logos/ii-apple-squircle.jpg`](assets/logos/ii-apple-squircle.jpg) | Frosted glassmorphism app icon with dual beveled crystal "II" pillars |
+| **Cyber 3D Monogram** | [`assets/logos/ii-cyber-monogram.jpg`](assets/logos/ii-cyber-monogram.jpg) | Futuristic 3D beveled isometric tech emblem |
+| **Kinetic Vector Mark** | [`assets/logos/ii-kinetic-vector.jpg`](assets/logos/ii-kinetic-vector.jpg) | Minimalist aerodynamic precision-cut monogram |
 
 ---
 

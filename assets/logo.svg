@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Dark Obsidian Glass Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1320" />
+      <stop offset="50%" stop-color="#080b12" />
+      <stop offset="100%" stop-color="#040609" />
+    </linearGradient>
+
+    <!-- Subtle Glass Refraction Gradient -->
+    <linearGradient id="glassSheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.12" />
+      <stop offset="35%" stop-color="#818cf8" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Border Neon Gradient -->
+    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.65" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.55" />
+    </linearGradient>
+
+    <!-- Pillar 1 Gradient (Electric Cyan -> Sky Blue) -->
+    <linearGradient id="pillarLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+
+    <!-- Pillar 2 Gradient (Cobalt -> Violet) -->
+    <linearGradient id="pillarRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <!-- Core Neon Glow Filter -->
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#00f2fe" flood-opacity="0.22" />
+    </filter>
+
+    <!-- Inner Bevel Highlight -->
+    <linearGradient id="facetHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Squircle Base Container -->
+  <rect width="512" height="512" rx="116" fill="url(#bgGradient)" filter="url(#dropShadow)" />
+  <rect width="512" height="512" rx="116" fill="url(#glassSheen)" />
+  <rect x="2" y="2" width="508" height="508" rx="114" fill="none" stroke="url(#borderGradient)" stroke-width="3" />
+
+  <!-- Background Ambient Glow Behind Monogram -->
+  <circle cx="256" cy="256" r="140" fill="#38bdf8" opacity="0.08" filter="url(#neonGlow)" />
+  <circle cx="310" cy="270" r="110" fill="#818cf8" opacity="0.08" filter="url(#neonGlow)" />
+
+  <!-- Monogram Group -->
+  <g id="ii-monogram">
+    <!-- LEFT PILLAR (First 'I') -->
+    <g id="left-i">
+      <!-- Glow Underlay -->
+      <path d="M 152 144 L 228 144 L 228 174 L 210 192 L 210 320 L 228 338 L 228 368 L 152 368 L 152 338 L 170 320 L 170 192 L 152 174 Z" 
+            fill="url(#pillarLeft)" opacity="0.6" filter="url(#neonGlow)" />
+      
+      <!-- Main Solid Shape -->
+      <path d="M 152 144 L 228 144 L 228 174 L 210 192 L 210 320 L 228 338 L 228 368 L 152 368 L 152 338 L 170 320 L 170 192 L 152 174 Z" 
+            fill="url(#pillarLeft)" />
+
+      <!-- Left Facet Bevel / Depth Highlight -->
+      <path d="M 152 144 L 190 144 L 190 368 L 152 368 L 152 338 L 170 320 L 170 192 L 152 174 Z" 
+            fill="url(#facetHighlight)" opacity="0.25" />
+
+      <!-- Top Cap Sheen -->
+      <line x1="154" y1="145" x2="226" y2="145" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+    </g>
+
+    <!-- RIGHT PILLAR (Second 'I') -->
+    <g id="right-i">
+      <!-- Glow Underlay -->
+      <path d="M 284 144 L 360 144 L 360 174 L 342 192 L 342 320 L 360 338 L 360 368 L 284 368 L 284 338 L 302 320 L 302 192 L 284 174 Z" 
+            fill="url(#pillarRight)" opacity="0.6" filter="url(#neonGlow)" />
+      
+      <!-- Main Solid Shape -->
+      <path d="M 284 144 L 360 144 L 360 174 L 342 192 L 342 320 L 360 338 L 360 368 L 284 368 L 284 338 L 302 320 L 302 192 L 284 174 Z" 
+            fill="url(#pillarRight)" />
+
+      <!-- Right Facet Bevel / Depth Highlight -->
+      <path d="M 284 144 L 322 144 L 322 368 L 284 368 L 284 338 L 302 320 L 302 192 L 284 174 Z" 
+            fill="url(#facetHighlight)" opacity="0.25" />
+
+      <!-- Top Cap Sheen -->
+      <line x1="286" y1="145" x2="358" y2="145" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+    </g>
+
+    <!-- Dynamic Swift Terminal Pulse Dot -->
+    <circle cx="256" cy="386" r="4.5" fill="#38bdf8" filter="url(#neonGlow)" />
+  </g>
+</svg>

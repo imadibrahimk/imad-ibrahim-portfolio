@@ -628,6 +628,7 @@ Available commands:
   • <span class="term-cmd">skills</span>      - Mobile, AI model creation & backend stack
   • <span class="term-cmd">contact</span>     - Direct contact info & channels
   • <span class="term-cmd">hire</span>        - Open direct communication channel
+  • <span class="term-cmd">logo</span>        - View & inspect "II" brand monogram assets
   • <span class="term-cmd">clear</span>       - Clear the terminal console
 `,
     about: () => `
@@ -696,6 +697,20 @@ Location     : Kerala, India (Remote worldwide)
       window.location.href = 'mailto:imadibrahim164@gmail.com?subject=Engineering%20Opportunity';
       return 'Opening email client to imadibrahim164@gmail.com...';
     },
+    logo: () => `
+<span style="color: var(--accent-cyan); font-weight: bold;">[II] Monogram Brand Identity — Imad Ibrahim</span>
+---------------------------------------------------------------
+Symbolism  : Dual architectural pillars forming "II" (Imad Ibrahim) & Roman Numeral II.
+Design DNA : Cupertino frosted glassmorphic squircle with electric cyan to violet gradient.
+Formats    : Scalable Vector (.SVG), Browser Favicon, High-Res Master Concept Renders.
+
+Available Assets in Workspace:
+  • Scalable Vector Logo : assets/logo.svg
+  • Vector Tab Favicon   : assets/favicon.svg
+  • Apple Squircle Concept: assets/logos/ii-apple-squircle.jpg
+  • Cyber 3D Monogram    : assets/logos/ii-cyber-monogram.jpg
+  • Kinetic Vector Mark  : assets/logos/ii-kinetic-vector.jpg
+`,
     sudo: () => 'Nice try! You already have root privileges as our guest.',
     clear: () => {
       output.innerHTML = '';

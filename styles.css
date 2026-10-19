@@ -250,13 +250,27 @@ body {
   justify-content: center;
   width: 36px;
   height: 36px;
-  background: linear-gradient(135deg, #38bdf8, #818cf8);
-  color: #080a11;
-  font-family: var(--font-mono);
-  font-weight: 800;
-  font-size: 0.95rem;
-  border-radius: var(--radius-sm);
-  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.4);
+  background: radial-gradient(circle at 35% 30%, rgba(56, 189, 248, 0.22), rgba(15, 23, 42, 0.95));
+  border: 1.5px solid rgba(56, 189, 248, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.brand-logo:hover .logo-badge {
+  transform: translateY(-1px) scale(1.05);
+  border-color: rgba(56, 189, 248, 0.75);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.45), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.logo-badge svg {
+  display: block;
+  transition: filter var(--transition-fast);
+}
+
+.brand-logo:hover .logo-badge svg {
+  filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.65));
 }
 
 .brand-dot {
@@ -2017,7 +2031,12 @@ a.c-val:hover {
   .logo-badge {
     width: 32px;
     height: 32px;
-    font-size: 0.85rem;
+    border-radius: 9px;
+  }
+
+  .logo-badge svg {
+    width: 17px;
+    height: 17px;
   }
 
   .nav-links,
