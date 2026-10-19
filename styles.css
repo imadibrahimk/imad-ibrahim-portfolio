@@ -1106,6 +1106,87 @@ body {
   margin-top: 0.2rem;
 }
 
+/* Multi-Tenant Fleet Architecture Matrix */
+.fleet-matrix-wrap {
+  margin-top: 1.25rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.fleet-matrix-table-scroll {
+  overflow-x: auto;
+  margin-top: 0.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.fleet-matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  text-align: left;
+  background: rgba(6, 12, 26, 0.6);
+}
+
+.fleet-matrix-table th {
+  padding: 0.7rem 0.95rem;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  white-space: nowrap;
+}
+
+.fleet-matrix-table td {
+  padding: 0.65rem 0.95rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  color: var(--text-main);
+  white-space: nowrap;
+}
+
+.fleet-matrix-table tr:hover td {
+  background: rgba(56, 189, 248, 0.04);
+}
+
+.series-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: rgba(56, 189, 248, 0.15);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.fleet-matrix-table a {
+  color: var(--text-main);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all var(--transition-fast);
+}
+
+.fleet-matrix-table a:hover {
+  color: var(--accent-cyan);
+  transform: translateX(2px);
+}
+
+.fleet-matrix-table code {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent-purple);
+  background: rgba(192, 132, 252, 0.12);
+  border: 1px solid rgba(192, 132, 252, 0.2);
+  padding: 0.12rem 0.4rem;
+  border-radius: 3px;
+}
+
 /* ==========================================================================
    FEATURED PROJECTS SHOWCASE
    ========================================================================== */

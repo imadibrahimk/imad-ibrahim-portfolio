@@ -101,18 +101,22 @@ const PROJECTS = [
        +----------------------+----------------------+
        |                      |                      |
        v                      v                      v
-+--------------+      +--------------+      +----------------+
-|  Flights (5) |      |  Hotels (6)  |      | Car Rental (6) |
-| - Flights70  |      | - Hotel70    |      | - Rent80       |
-| - Low Fare   |      | - Discounts  |      | - Airport Rent |
-| - Last Min   |      | - Deals      |      | - Near Me      |
-+--------------+      +--------------+      +----------------+
++------------------+  +------------------+  +------------------+
+|   Flights (IF)   |  |   Hotels (IH)    |  | Car Rentals (IR) |
+| - D1-flight-ios  |  | - D1-hotel-ios   |  | - D1-car-ios     |
+| - D2-flight-ios  |  | - D2-hotel-ios   |  | - D2-car-ios     |
+| - M1-flight-ios  |  | - M1-hotel-ios   |  | - M1-car-ios     |
+| - M6-flight-ios  |  | - M4-hotel-ios   |  | - M4-car-ios     |
+| - M8-flight-ios  |  | - M6-hotel-ios   |  | - M6-car-ios     |
+|                  |  | - M8-hotel-ios   |  | - M8-car-ios     |
++------------------+  +------------------+  +------------------+
        |                      |                      |
        +----------------------+----------------------+
                               |
                               v
 +-------------------------------------------------------------+
 |       Fluid UX, Sensory Haptic & Revenue Gateway Core        |
+|  - 100% Pure SwiftUI Declarative Component Tree (No UIKit)   |
 |  - UIImpactFeedbackGenerator / Sensory Touch Response       |
 |  - 120Hz ProMotion Micro-Animations & Gesture Controls      |
 |  - Adapty Remote Paywalls & In-App Purchase A/B Funnels     |
@@ -120,6 +124,7 @@ const PROJECTS = [
 +-------------------------------------------------------------+`,
     highlights: [
       'Managing the architecture, release cadence, and performance across 15+ live iOS applications in the Apple App Store.',
+      'Architected the multi-tenant repository layout at Lascade-Co (D1, D2, M1, M4, M6, M8 series across car, hotel, and flight engines), maintaining high code reuse and unified deployment workflows.',
       'Core focus applications live on App Store: Flightpoints (ID: 6756680456), Hotel70 (ID: 6498233255), Rent80 (ID: 6472572506), Flights70 (ID: 6479599821), and Hotel Discounts (ID: 1575411137).',
       'Spearheaded and successfully deployed the Unified Design Space, eliminating cross-app UI fragmentation with reusable 100% pure SwiftUI components (no UIKit).',
       'Currently engineering ultra-fluid micro-interactions and tactile sensory haptic feedback to maximize session engagement and user delight.',
