@@ -47,13 +47,13 @@ const PROJECTS = [
   },
   {
     id: 'flight-miles',
-    title: 'Flight-Miles (Flightpoints-iOS)',
+    title: 'Flightpoints — Award Flights (App Store)',
     category: 'ios',
-    categoryLabel: 'Native iOS (SwiftUI & UIKit)',
-    summary: 'Flagship native iOS application engineered with SwiftUI and modern MVVM. Integrates Adapty subscriptions & paywalls, Mixpanel, Microsoft Clarity, Firebase, and Meta tracking with deep flight search caching.',
-    tags: ['SwiftUI', 'UIKit', 'Adapty Paywalls', 'Mixpanel SDK', 'Microsoft Clarity', 'Firebase', 'MVVM'],
-    link: 'https://github.com/imadibrahimk',
-    linkLabel: 'View on GitHub',
+    categoryLabel: 'Native iOS • Live on App Store',
+    summary: 'Flagship native iOS travel application published on the Apple App Store (ID: 6756680456). Engineered with SwiftUI, modern MVVM, dynamic Adapty paywalls, Mixpanel, Microsoft Clarity, Firebase, Meta tracking, and high-performance flight search caching.',
+    tags: ['SwiftUI', 'UIKit', 'App Store Live', 'Adapty Paywalls', 'Mixpanel SDK', 'Microsoft Clarity', 'Firebase', 'MVVM'],
+    link: 'https://apps.apple.com/app/id6756680456',
+    linkLabel: 'View on App Store',
     isInstagram: false,
     architecture: `+-------------------------------------------------------------+
 |                     SwiftUI View Layer                      |
@@ -76,10 +76,54 @@ const PROJECTS = [
 |  - UserDefaults & Local Caching Engine                      |
 +-------------------------------------------------------------+`,
     highlights: [
+      'Published and actively maintained on the Apple App Store (ID: 6756680456) for award flight tracking and deal alerts.',
       'Engineered dynamic in-app purchase and subscription paywalls using Adapty SDK, enabling remote UI experiments without App Store reviews.',
       'Designed a multi-provider analytics architecture synchronizing telemetry across Mixpanel, Microsoft Clarity, Firebase, and Meta.',
       'Implemented custom recursive property serialization for Mixpanel to cleanly capture complex nested purchase arrays and checkout items.',
       'Constructed optimized local airport search caches for sub-10ms query response on device.'
+    ]
+  },
+  {
+    id: 'lascade-fleet',
+    title: 'Lascade 15+ iOS App Store Fleet & Unified Design Space',
+    category: 'ios',
+    categoryLabel: 'Enterprise Fleet Architecture & Design System',
+    summary: 'Architecting and managing 15+ live iOS travel apps on the Apple App Store (Hotel70, Rent80, Flights70, Flightpoints, etc.). Built the unified "Design Space" component architecture, and currently engineering sensory haptic feedback, fluid micro-interactions, and Adapty revenue optimization.',
+    tags: ['15+ App Store Apps', 'Unified Design Space', 'SwiftUI', 'UIKit', 'Sensory Haptics', 'Adapty Revenue', 'Mixpanel', 'Travel Tech'],
+    link: 'https://apps.apple.com/app/id6756680456',
+    linkLabel: 'View Flightpoints on App Store',
+    isInstagram: false,
+    architecture: `+-------------------------------------------------------------+
+|              Lascade Unified Design Space Architecture      |
+|    (Shared Design Tokens, Typography, Themes, Brand Voice)  |
++-------------------------------------------------------------+
+                              |
+       +----------------------+----------------------+
+       |                      |                      |
+       v                      v                      v
++--------------+      +--------------+      +----------------+
+|  Flights (5) |      |  Hotels (6)  |      | Car Rental (6) |
+| - Flights70  |      | - Hotel70    |      | - Rent80       |
+| - Low Fare   |      | - Discounts  |      | - Airport Rent |
+| - Last Min   |      | - Deals      |      | - Near Me      |
++--------------+      +--------------+      +----------------+
+       |                      |                      |
+       +----------------------+----------------------+
+                              |
+                              v
++-------------------------------------------------------------+
+|       Fluid UX, Sensory Haptic & Revenue Gateway Core        |
+|  - UIImpactFeedbackGenerator / Sensory Touch Response       |
+|  - 120Hz ProMotion Micro-Animations & Gesture Controls      |
+|  - Adapty Remote Paywalls & In-App Purchase A/B Funnels     |
+|  - Multi-Provider Telemetry (Mixpanel, Clarity, Firebase)   |
++-------------------------------------------------------------+`,
+    highlights: [
+      'Managing the architecture, release cadence, and performance across 15+ live iOS applications in the Apple App Store.',
+      'Core focus applications include Hotel70, Rent80, Flights70, Hotel Discounts・Booking App, and Flightpoints - Award Flights.',
+      'Spearheaded and successfully deployed the Unified Design Space, eliminating cross-app UI fragmentation with reusable SwiftUI/UIKit components.',
+      'Currently engineering ultra-fluid micro-interactions and tactile sensory haptic feedback to maximize session engagement and user delight.',
+      'Optimizing revenue conversion funnels with dynamic remote Adapty paywalls and deep multi-provider telemetry pipelines.'
     ]
   },
   {
@@ -362,9 +406,10 @@ function initTypewriter() {
 
   const roles = [
     'iOS Lead @ Lascade.',
+    'Fleet Architect (15+ App Store Apps).',
     'Head of AI Model Creation.',
-    'SwiftUI & UIKit Architect.',
-    'React Native & Mobile Engineer.'
+    'Unified Design Space & Haptic Engineer.',
+    'SwiftUI & UIKit Master.'
   ];
 
   let roleIdx = 0;
@@ -581,18 +626,21 @@ Available commands:
   • <span class="term-cmd">clear</span>       - Clear the terminal console
 `,
     about: () => `
-Imad Ibrahim — iOS Lead @ Lascade & former Head of AI Model Creation @ Alforia.
+Imad Ibrahim — iOS Lead @ Lascade (managing 15+ App Store travel apps) & former Head of AI Model Creation @ Alforia.
 - Based in Kerala, India.
-- Mastered & leading SwiftUI/UIKit architectures, Adapty paywalls, and telemetry at Lascade.
+- Managing 15+ iOS Apps: Flightpoints, Hotel70, Rent80, Flights70, Hotel Discounts, etc.
+- Unified Design Space: Established shared component architecture across 15+ apps.
+- Fluid Haptics & Revenue: Engineering tactile sensory haptic UX & Adapty paywall monetization.
 - Creator of Kerala's 1st realistic AI influencer/model @aswathy_achu.ai using Automatic1111 (A1111).
 - Founding Architect of TinkerSpace Digital Display Kiosk (now maintained by community contributors).
-- Built real-time WebSocket chat apps in React Native.
 Philosophy: "Coding is like playing games."
 `,
     experience: () => `
-[2025 - Present] iOS Lead @ Lascade
-  - Mastered & leading production SwiftUI & UIKit architecture for client products.
-  - Full-funnel paywall optimization with Adapty & telemetry (Mixpanel, Clarity, Firebase, Meta).
+[2025 - Present] iOS Lead — 15+ App Store Fleet @ Lascade
+  - Managing architecture & release cadence for 15+ live iOS travel apps on the Apple App Store.
+  - Core focus: Flightpoints - Award Flights, Hotel70, Rent80, Flights70, and Hotel Discounts.
+  - Standardized the Unified Design Space (voice & shared UI components) across all 15+ apps.
+  - Currently engineering ultra-fluid micro-interactions, sensory haptics, and Adapty revenue funnels.
 
 [2023 - 2025] Head of AI Model Creation & Mobile Developer @ Alforia Pvt Ltd
   - Pioneered Aswathy Achu (@aswathy_achu.ai) — Kerala's 1st realistic virtual AI influencer.
@@ -608,19 +656,23 @@ Philosophy: "Coding is like playing games."
   - Over 25 GitHub repositories spanning Deno, Python, Node.js, and Swift.
 `,
     projects: () => `
-1. Aswathy Achu AI              -> Kerala's 1st realistic virtual AI influencer (@aswathy_achu.ai)
-2. TinkerSpace Digital Kiosk    -> Foundational Smart TV signage kiosk (now community maintained)
-3. Flight-Miles (Flightpoints)  -> Flagship SwiftUI app with Adapty & Mixpanel
-4. Real-Time Chat App           -> React Native WebSocket chat platform
-5. RenderKeepAlive              -> 24/7 Deno zero-cold-start cloud daemon
-6. MongoDB-Autocomplete-Search  -> Sub-50ms fuzzy suggestions over Express
-7. StockSymbolScraper           -> Screener.in financial parser & PDF engine
+1. Flightpoints (App Store)      -> Flagship SwiftUI app with Adapty & Mixpanel (ID: 6756680456)
+2. Lascade 15+ App Store Fleet   -> Unified Design Space, fluid haptics & 15+ travel apps
+3. Aswathy Achu AI               -> Kerala's 1st realistic virtual AI influencer (@aswathy_achu.ai)
+4. TinkerSpace Digital Kiosk     -> Foundational Smart TV signage kiosk (now community maintained)
+5. Real-Time Chat App            -> React Native WebSocket chat platform
+6. RenderKeepAlive               -> 24/7 Deno zero-cold-start cloud daemon
+7. MongoDB-Autocomplete-Search   -> Sub-50ms fuzzy suggestions over Express
+8. StockSymbolScraper            -> Screener.in financial parser & PDF engine
 `,
     skills: () => `
-iOS & Native    : SwiftUI, UIKit, Swift 6.0, MVVM, Combine, CoreData, Xcode Instruments
+iOS & Fleet     : 15+ App Store Apps, SwiftUI, UIKit, Swift 6.0, MVVM, Combine, CoreData
+Design Space    : Unified Component Systems, Shared Design Tokens, Multi-App Consistency
+Sensory & Motion: UIImpactFeedbackGenerator, CoreHaptics, Fluid Micro-Interactions, 120Hz ProMotion
 Generative AI   : Automatic1111 (A1111), LoRA Training, Stable Diffusion, Face Consistency, AI Video
+Monetization    : Adapty Dynamic Paywalls, Subscription Funnels, IAP A/B Testing
+Telemetry       : Mixpanel SDK (Custom Recursive Serializer), MS Clarity, Firebase, Meta
 Cross-Platform  : React Native, WebSockets (Duplex), Instant Chat Protocols
-Growth & Metrics: Adapty Paywalls, Mixpanel SDK, MS Clarity, Firebase, Meta App Events
 Cloud & Backend : Deno, TypeScript, Node.js, Express, MongoDB Atlas, Python, Django
 `,
     contact: () => `

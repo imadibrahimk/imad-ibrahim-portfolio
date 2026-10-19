@@ -1,6 +1,6 @@
 # Imad Ibrahim — Personal Portfolio & Engineering Showcase
 
-> **iOS Lead @ Lascade • SwiftUI & Apple Ecosystem Architect • Creative Technologist**  
+> **iOS Lead @ Lascade (Fleet of 15+ App Store Apps) • SwiftUI & Apple Ecosystem Architect • Creative Technologist**  
 > *"Coding is like playing games."*
 
 A modern, high-performance personal portfolio website built with semantic HTML5, vanilla CSS3 glassmorphism, and interactive JavaScript. Designed to showcase native iOS projects, cloud utilities, and full-stack engineering achievements.
@@ -11,12 +11,13 @@ A modern, high-performance personal portfolio website built with semantic HTML5,
 
 ## ✨ Features
 
-- **Dynamic Hero Section**: Interactive role typewriter, live Swift 6.0 code showcase, status indicator, and production metrics.
-- **Career Roadmap**: Detailed chronological timeline documenting roles at **Lascade (iOS Lead)**, **Alforia Pvt Ltd**, and open-source systems.
+- **Dynamic Hero Section**: Interactive role typewriter, live Swift 6.0 code showcase, status indicator, and production metrics (`15+ App Store iOS Apps`).
+- **Career Roadmap**: Detailed chronological timeline documenting roles at **Lascade (iOS Lead — 15+ App Store Apps)**, **Alforia Pvt Ltd (Head of AI Model Creation)**, and open-source systems.
 - **Featured Projects Showcase**:
+  - **Flightpoints — Award Flights (App Store)**: Flagship native SwiftUI app on the App Store (ID: 6756680456) with Adapty paywalls, Mixpanel recursive property serializer, and multi-provider analytics.
+  - **Lascade 15+ iOS App Store Fleet & Unified Design Space**: Architecting and leading 15+ live iOS travel apps (Hotel70, Rent80, Flights70, Flightpoints, etc.) with unified modular design system, sensory haptic feedback, and Adapty revenue funnels.
   - **Aswathy Achu (@aswathy_achu.ai)**: Kerala's very first hyper-realistic AI influencer & virtual model, engineered as Head of AI Model Creation using Automatic1111 (A1111), custom LoRAs, and AI video synthesis.
   - **TinkerSpace Digital Display Kiosk**: Open-source 24/7 Smart TV signage app for TinkerHub Foundation with legacy WebKit polyfills, animated mascot state machine, and Kanban week-board schedule. Built as founding contributor & architect (26+ PRs/commits) during early learning days with Airtable; now maintained and expanded by community contributors.
-  - **Flight-Miles (Flightpoints-iOS)**: Flagship native SwiftUI app with Adapty paywalls, Mixpanel recursive property serializer, and multi-provider analytics.
   - **Real-Time Chat App**: Cross-platform instant messaging app in React Native with low-latency WebSockets and optimistic UI state.
   - **RenderKeepAlive**: High-efficiency Deno & TypeScript keep-alive daemon eliminating container cold starts.
   - **MongoDB Autocomplete Search**: Real-time fuzzy auto-suggest query engine over Express & MongoDB Atlas.
