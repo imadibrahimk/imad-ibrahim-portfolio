@@ -14,7 +14,9 @@ A modern, high-performance personal portfolio website built with semantic HTML5,
 - **Dynamic Hero Section**: Interactive role typewriter, live Swift 6.0 code showcase, status indicator, and production metrics.
 - **Career Roadmap**: Detailed chronological timeline documenting roles at **Lascade (iOS Lead)**, **Alforia Pvt Ltd**, and open-source systems.
 - **Featured Projects Showcase**:
+  - **Aswathy Achu (@aswathy_achu.ai)**: Kerala's very first hyper-realistic AI influencer & virtual model, engineered as Head of AI Model Creation using Automatic1111 (A1111), custom LoRAs, and AI video synthesis.
   - **Flight-Miles (Flightpoints-iOS)**: Flagship native SwiftUI app with Adapty paywalls, Mixpanel recursive property serializer, and multi-provider analytics.
+  - **Real-Time Chat App**: Cross-platform instant messaging app in React Native with low-latency WebSockets and optimistic UI state.
   - **RenderKeepAlive**: High-efficiency Deno & TypeScript keep-alive daemon eliminating container cold starts.
   - **MongoDB Autocomplete Search**: Real-time fuzzy auto-suggest query engine over Express & MongoDB Atlas.
   - **StockSymbolScraper**: Automated Python financial market intelligence pipeline.

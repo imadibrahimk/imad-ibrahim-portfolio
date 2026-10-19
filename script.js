@@ -9,13 +9,52 @@
 // ==========================================
 const PROJECTS = [
   {
+    id: 'aswathy-achu-ai',
+    title: 'Aswathy Achu — Kerala’s 1st Realistic AI Influencer & Virtual Model',
+    category: 'ai',
+    categoryLabel: 'Generative AI & Model Creation',
+    summary: 'Led the generative AI pipeline as Head of AI Model Creation at Alforia to pioneer Kerala’s very first hyper-realistic AI influencer (@aswathy_achu.ai). Built automated local AI pipelines using Automatic1111 (A1111), custom LoRA models, ControlNet, and procedural video generation workflows.',
+    tags: ['Automatic1111 (A1111)', 'Custom LoRA Training', 'Face Consistency', 'Stable Diffusion', 'AI Video Creation', 'Python Automation'],
+    link: 'https://www.instagram.com/aswathy_achu.ai?utm_source=ig_web_button_share_sheet&xtok=ZDNlZDc0MzIxNw==',
+    linkLabel: 'View on Instagram',
+    isInstagram: true,
+    architecture: `+-------------------------------------------------------------+
+|              Head of AI Model Creation Pipeline             |
+|   (Procedural Face Generation, Consistency & Identity)      |
++-------------------------------------------------------------+
+                              |
+                              v
++-------------------------------------------------------------+
+|            Automatic1111 (A1111) Local AI Engine            |
+|  - Custom Trained LoRA Models for Distinct Facial Anatomy   |
+|  - ControlNet Pose/Structure & Depth Preservation           |
+|  - Latent High-Resolution Upscaling & Inpainting Passes     |
++-------------------------------------------------------------+
+                              |
+                              v
++-------------------------------------------------------------+
+|              Motion & Video Generation Systems              |
+|  - Temporal Consistency Smoothing Pipelines                 |
+|  - Automated Batch Generation & Social Media Asset Delivery |
+|  - @aswathy_achu.ai Live Production Profile                 |
++-------------------------------------------------------------+`,
+    highlights: [
+      'Pioneered Kerala’s very first realistic AI influencer & virtual model (@aswathy_achu.ai), amassing thousands of engaged followers across social media.',
+      'Constructed and orchestrated local generative AI pipelines leveraging Automatic1111 (A1111), ComfyUI, custom LoRA weights, and ControlNet.',
+      'Mastered photorealistic facial and identity consistency across hundreds of dynamic lighting setups, camera angles, expressions, and attires.',
+      'Engineered automated post-processing scripts and AI video synthesis pipelines for high-engagement reel content.'
+    ]
+  },
+  {
     id: 'flight-miles',
     title: 'Flight-Miles (Flightpoints-iOS)',
     category: 'ios',
-    categoryLabel: 'Native iOS & SwiftUI',
+    categoryLabel: 'Native iOS (SwiftUI & UIKit)',
     summary: 'Flagship native iOS application engineered with SwiftUI and modern MVVM. Integrates Adapty subscriptions & paywalls, Mixpanel, Microsoft Clarity, Firebase, and Meta tracking with deep flight search caching.',
-    tags: ['SwiftUI', 'Adapty Paywalls', 'Mixpanel SDK', 'Microsoft Clarity', 'Firebase', 'MVVM'],
-    github: 'https://github.com/imadibrahimk',
+    tags: ['SwiftUI', 'UIKit', 'Adapty Paywalls', 'Mixpanel SDK', 'Microsoft Clarity', 'Firebase', 'MVVM'],
+    link: 'https://github.com/imadibrahimk',
+    linkLabel: 'View on GitHub',
+    isInstagram: false,
     architecture: `+-------------------------------------------------------------+
 |                     SwiftUI View Layer                      |
 | (WindowGroup, NavigationStack, PaywallView, FlightSearch)   |
@@ -44,13 +83,41 @@ const PROJECTS = [
     ]
   },
   {
+    id: 'react-native-chat',
+    title: 'Real-Time Chat App (React Native)',
+    category: 'mobile',
+    categoryLabel: 'Cross-Platform Mobile',
+    summary: 'Engineered a real-time instant messaging application at Alforia using React Native, WebSocket connections, optimistic UI state updates, and modular component architecture.',
+    tags: ['React Native', 'JavaScript', 'WebSockets', 'Real-Time Messaging', 'Mobile UI'],
+    link: 'https://github.com/imadibrahimk',
+    linkLabel: 'View on GitHub',
+    isInstagram: false,
+    architecture: `[React Native Mobile Client (iOS & Android)]
+         |
+         v
+[WebSocket & REST Messaging Protocol]
+  - Bidirectional Real-time Socket Connection
+  - Optimistic UI State Dispatcher
+  - Offline Message Queue & Local Cache
+         |
+         v
+[Chat Gateway Microservice]`,
+    highlights: [
+      'Built cross-platform real-time chat application in React Native with responsive styling and fluid animations.',
+      'Implemented low-latency WebSocket duplex communication for typing status, delivery receipts, and live messages.',
+      'Engineered local caching and optimistic message rendering for instant perceived performance.'
+    ]
+  },
+  {
     id: 'render-keepalive',
     title: 'RenderKeepAlive Daemon',
     category: 'cloud',
     categoryLabel: 'Cloud Resilience',
     summary: 'High-efficiency Deno and TypeScript daemon engineered to keep Render server instances awake 24/7, completely preventing cold-start spin-down penalties.',
     tags: ['Deno', 'TypeScript', 'Cloud Automation', 'Heartbeat', 'Uptime'],
-    github: 'https://github.com/imadibrahimk/RenderKeepAlive',
+    link: 'https://github.com/imadibrahimk/RenderKeepAlive',
+    linkLabel: 'View on GitHub',
+    isInstagram: false,
     architecture: `[Cloud Scheduler / Deno Runtime]
          |
          +--> [Scheduled Ping Loop] (Configurable Interval)
@@ -73,7 +140,9 @@ const PROJECTS = [
     categoryLabel: 'Database & Backend',
     summary: 'Sub-50ms real-time autocomplete search engine utilizing Node.js, Express, and MongoDB Atlas aggregation pipelines to deliver fuzzy suggestion queries as users type.',
     tags: ['Node.js', 'Express', 'MongoDB Atlas', 'Fuzzy Search', 'Aggregations'],
-    github: 'https://github.com/imadibrahimk/MongoDB-Autocomplete-Search',
+    link: 'https://github.com/imadibrahimk/MongoDB-Autocomplete-Search',
+    linkLabel: 'View on GitHub',
+    isInstagram: false,
     architecture: `[Client Search Input] 
          |  (Debounced Keystroke stream)
          v
@@ -100,7 +169,9 @@ const PROJECTS = [
     categoryLabel: 'Data Intelligence',
     summary: 'Automated Python data pipeline harvesting stock symbols, fundamental financial ratios, and market metrics from Screener.in with structured PDF and text output.',
     tags: ['Python', 'BeautifulSoup', 'Data Scraping', 'PDF Generation', 'Automation'],
-    github: 'https://github.com/imadibrahimk/StockSymbolScraper',
+    link: 'https://github.com/imadibrahimk/StockSymbolScraper',
+    linkLabel: 'View on GitHub',
+    isInstagram: false,
     architecture: `[Screener.in Web Sources]
          |
          v
@@ -126,7 +197,9 @@ const PROJECTS = [
     categoryLabel: 'Interactive Canvas',
     summary: 'Browser-based particle simulation replicating the cinematic Thanos disintegration effect using HTML5 Canvas pixel manipulation and physics calculations.',
     tags: ['JavaScript', 'HTML5 Canvas', 'Particle Simulation', 'Math/Physics'],
-    github: 'https://github.com/imadibrahimk/thanos_snap',
+    link: 'https://github.com/imadibrahimk/thanos_snap',
+    linkLabel: 'View on GitHub',
+    isInstagram: false,
     architecture: `[Source DOM Element]
          |
          v (html2canvas / rasterization)
@@ -152,7 +225,9 @@ const PROJECTS = [
     categoryLabel: 'Full-Stack Web',
     summary: 'Full-featured Python & Django social network application incorporating authenticated user feeds, profile customization, post timelines, and media attachments.',
     tags: ['Python', 'Django', 'SQLite/Postgres', 'Authentication', 'Full-Stack'],
-    github: 'https://github.com/imadibrahimk/social_book',
+    link: 'https://github.com/imadibrahimk/social_book',
+    linkLabel: 'View on GitHub',
+    isInstagram: false,
     architecture: `[Django MVT Architecture]
   - Models: UserProfile, Post, Like, Follower
   - Views: Session Auth, Feed Algorithm, Media Uploads
@@ -248,9 +323,9 @@ function initTypewriter() {
 
   const roles = [
     'iOS Lead @ Lascade.',
-    'SwiftUI & MVVM Architect.',
-    'Monetization & Analytics Specialist.',
-    'Creative Software Technologist.'
+    'Head of AI Model Creation.',
+    'SwiftUI & UIKit Architect.',
+    'React Native & Mobile Engineer.'
   ];
 
   let roleIdx = 0;
@@ -297,35 +372,41 @@ function renderProjects(filter = 'all') {
     ? PROJECTS 
     : PROJECTS.filter(p => p.category === filter);
 
-  container.innerHTML = filtered.map(p => `
-    <article class="project-card glass-panel" data-id="${p.id}">
-      <div class="project-top-row">
-        <span class="project-category-badge">${p.categoryLabel}</span>
-        <div class="project-external-links">
-          <a href="${p.github}" target="_blank" rel="noopener" class="project-link-icon" title="View Source on GitHub">
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          </a>
+  container.innerHTML = filtered.map(p => {
+    const iconSvg = p.isInstagram
+      ? `<svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>`
+      : `<svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>`;
+
+    return `
+      <article class="project-card glass-panel" data-id="${p.id}">
+        <div class="project-top-row">
+          <span class="project-category-badge">${p.categoryLabel}</span>
+          <div class="project-external-links">
+            <a href="${p.link}" target="_blank" rel="noopener" class="project-link-icon" title="${p.linkLabel}">
+              ${iconSvg}
+            </a>
+          </div>
         </div>
-      </div>
 
-      <h3 class="project-title">${p.title}</h3>
-      <p class="project-description">${p.summary}</p>
+        <h3 class="project-title">${p.title}</h3>
+        <p class="project-description">${p.summary}</p>
 
-      <div class="project-tech-stack">
-        ${p.tags.map(t => `<span class="tech-chip">${t}</span>`).join('')}
-      </div>
+        <div class="project-tech-stack">
+          ${p.tags.map(t => `<span class="tech-chip">${t}</span>`).join('')}
+        </div>
 
-      <div class="project-footer-row">
-        <button class="project-detail-btn" onclick="openProjectModal('${p.id}')">
-          <span>Architecture & Details</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </button>
-      </div>
-    </article>
-  `).join('');
+        <div class="project-footer-row">
+          <button class="project-detail-btn" onclick="openProjectModal('${p.id}')">
+            <span>Architecture & Details</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </article>
+    `;
+  }).join('');
 }
 
 function initProjectFilters() {
@@ -350,6 +431,10 @@ function openProjectModal(id) {
   const modal = document.getElementById('project-modal');
   const content = document.getElementById('modal-content');
   if (!modal || !content) return;
+
+  const actionIcon = project.isInstagram
+    ? `<svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>`
+    : `<svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>`;
 
   content.innerHTML = `
     <div class="modal-category">${project.categoryLabel}</div>
@@ -376,10 +461,10 @@ function openProjectModal(id) {
       ${project.highlights.map(h => `<li>${h}</li>`).join('')}
     </ul>
 
-    <div style="margin-top: 2rem; display: flex; gap: 1rem; align-items: center;">
-      <a href="${project.github}" target="_blank" rel="noopener" class="btn btn-primary">
-        <span>View on GitHub</span>
-        <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+    <div style="margin-top: 2rem; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+      <a href="${project.link}" target="_blank" rel="noopener" class="btn btn-primary">
+        <span>${project.linkLabel}</span>
+        ${actionIcon}
       </a>
       <button class="btn btn-secondary" onclick="closeProjectModal()">Close</button>
     </div>
@@ -437,52 +522,56 @@ function initTerminal() {
   const COMMANDS = {
     help: () => `
 Available commands:
-  • <span class="term-cmd">about</span>       - Brief overview & engineering philosophy
-  • <span class="term-cmd">experience</span>  - Career roadmap & roles (Lascade, Alforia)
-  • <span class="term-cmd">projects</span>    - Catalog of featured apps and cloud tools
-  • <span class="term-cmd">skills</span>      - Technical stack and core competencies
+  • <span class="term-cmd">about</span>       - Bio, engineering leadership & AI background
+  • <span class="term-cmd">experience</span>  - Career roadmap (Lascade, Alforia)
+  • <span class="term-cmd">projects</span>    - Featured iOS, AI influencer & cloud projects
+  • <span class="term-cmd">skills</span>      - Mobile, AI model creation & backend stack
   • <span class="term-cmd">contact</span>     - Direct contact info & channels
   • <span class="term-cmd">hire</span>        - Open direct communication channel
   • <span class="term-cmd">clear</span>       - Clear the terminal console
 `,
     about: () => `
-Imad Ibrahim — iOS Lead at Lascade based in Kerala, India.
-Specializes in high-performance native iOS architecture (SwiftUI, MVVM, Combine),
-deep monetization telemetry (Adapty, Mixpanel, Clarity), and scalable full-stack services.
-Core belief: "Coding is like playing games."
+Imad Ibrahim — iOS Lead @ Lascade & former Head of AI Model Creation @ Alforia.
+- Based in Kerala, India.
+- Mastered & leading SwiftUI/UIKit architectures, Adapty paywalls, and telemetry at Lascade.
+- Creator of Kerala's 1st realistic AI influencer/model @aswathy_achu.ai using Automatic1111 (A1111).
+- Built real-time WebSocket chat apps in React Native.
+Philosophy: "Coding is like playing games."
 `,
     experience: () => `
 [2025 - Present] iOS Lead @ Lascade
-  - Architectural direction for flagship iOS apps.
-  - Paywall & monetization optimization with Adapty.
-  - Multi-provider analytics (Mixpanel, Clarity, Firebase, Meta).
+  - Mastered & leading production SwiftUI & UIKit architecture for client products.
+  - Full-funnel paywall optimization with Adapty & telemetry (Mixpanel, Clarity, Firebase, Meta).
 
-[2023 - 2025] iOS Developer & Software Engineer @ Alforia Pvt Ltd
-  - Native iOS product engineering & reusable UI design systems.
-  - API networking client & persistent offline storage layers.
+[2023 - 2025] Head of AI Model Creation & Mobile Developer @ Alforia Pvt Ltd
+  - Pioneered Aswathy Achu (@aswathy_achu.ai) — Kerala's 1st realistic virtual AI influencer.
+  - Built local generative AI stacks with Automatic1111 (A1111), custom LoRAs & AI video.
+  - Engineered cross-platform real-time Chat Applications in React Native with WebSockets.
 
 [2022 - Present] Independent Open-Source Creator
-  - Over 25 GitHub repositories spanning Deno, Python, Node.js & Swift.
+  - Over 25 GitHub repositories spanning Deno, Python, Node.js, and Swift.
 `,
     projects: () => `
-1. Flight-Miles (Flightpoints-iOS) -> Flagship SwiftUI app with Adapty & Mixpanel
-2. RenderKeepAlive                -> 24/7 Deno zero-cold-start cloud daemon
-3. MongoDB-Autocomplete-Search    -> Sub-50ms fuzzy suggestions over Express
-4. StockSymbolScraper             -> Screener.in financial parser & PDF engine
-5. Thanos Snap Particle Engine    -> Canvas-based procedural pixel disintegration
-6. Social Book Community          -> Django full-stack community application
+1. Aswathy Achu AI              -> Kerala's 1st realistic virtual AI influencer (@aswathy_achu.ai)
+2. Flight-Miles (Flightpoints)  -> Flagship SwiftUI app with Adapty & Mixpanel
+3. Real-Time Chat App           -> React Native WebSocket chat platform
+4. RenderKeepAlive              -> 24/7 Deno zero-cold-start cloud daemon
+5. MongoDB-Autocomplete-Search  -> Sub-50ms fuzzy suggestions over Express
+6. StockSymbolScraper           -> Screener.in financial parser & PDF engine
 `,
     skills: () => `
-iOS & Mobile    : Swift 6.0, SwiftUI, UIKit, MVVM, Combine, CoreData, Xcode Instruments
-Growth & Metrics: Adapty Paywalls, Mixpanel, MS Clarity, Firebase, Meta App Events
+iOS & Native    : SwiftUI, UIKit, Swift 6.0, MVVM, Combine, CoreData, Xcode Instruments
+Generative AI   : Automatic1111 (A1111), LoRA Training, Stable Diffusion, Face Consistency, AI Video
+Cross-Platform  : React Native, WebSockets (Duplex), Instant Chat Protocols
+Growth & Metrics: Adapty Paywalls, Mixpanel SDK, MS Clarity, Firebase, Meta App Events
 Cloud & Backend : Deno, TypeScript, Node.js, Express, MongoDB Atlas, Python, Django
-Practices       : Git Flow, Clean Architecture, Performance Optimization, CI/CD
 `,
     contact: () => `
 Email        : imadibrahim164@gmail.com
 GitHub       : https://github.com/imadibrahimk
 LinkedIn     : https://www.linkedin.com/in/imadibrahimk/
-StackOverflow: https://stackoverflow.com/users/19323608
+Instagram    : https://instagram.com/_imad________
+AI Project   : https://www.instagram.com/aswathy_achu.ai
 Location     : Kerala, India (Remote worldwide)
 `,
     hire: () => {
@@ -559,7 +648,6 @@ function initCopyEmail() {
       await navigator.clipboard.writeText(email);
       showToast('Email address copied to clipboard!');
     } catch {
-      // Fallback
       showToast(`Email: ${email}`);
     }
   });
