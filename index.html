@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imad Ibrahim — iOS Lead & Software Engineer</title>
+  <meta name="description" content="Portfolio of Imad Ibrahim — iOS Lead at Lascade, SwiftUI architect, mobile engineer, and creator of high-performance apps, cloud utilities, and full-stack systems.">
+  <meta name="keywords" content="Imad Ibrahim, iOS Lead, iOS Developer, SwiftUI, Swift, Lascade, Alforia, Mobile Engineer, Kerala India">
+  <meta name="author" content="Imad Ibrahim">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Imad Ibrahim — iOS Lead & Software Engineer">
+  <meta property="og:description" content="Explore projects, career journey, and technical architecture by Imad Ibrahim.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient Background Canvas & Glow Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" id="brand-logo">
+        <span class="logo-badge">II</span>
+        <span class="brand-text">Imad<span class="brand-dot">.</span>Ibrahim</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="terminal-toggle-btn" id="terminal-btn" title="Open Interactive CLI Terminal" aria-label="Open CLI Terminal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="4 17 10 11 4 5"></polyline>
+            <line x1="12" y1="19" x2="20" y2="19"></line>
+          </svg>
+          <span>CLI Terminal</span>
+        </button>
+        <a href="#contact" class="btn btn-primary nav-cta">Let's Connect</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Dropdown -->
+  <div class="mobile-nav-overlay" id="mobile-nav">
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#experience" class="mobile-nav-link">Experience</a>
+    <a href="#projects" class="mobile-nav-link">Projects</a>
+    <a href="#skills" class="mobile-nav-link">Skills</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <button class="btn btn-secondary w-full" id="mobile-terminal-btn">Open CLI Terminal</button>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Status Pill -->
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span class="status-text">Available for select iOS & Engineering initiatives</span>
+          </div>
+
+          <h1 class="hero-title">
+            Architecting <span class="gradient-text">fluid mobile</span> experiences & resilient systems.
+          </h1>
+
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">I build as an </span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-description">
+            Hey there, I'm <strong>Imad Ibrahim</strong>. I specialize in building high-performance native iOS applications with modern <strong>SwiftUI & MVVM</strong>, resilient backend microservices, and deep multi-provider analytics. For me, crafting software is as captivating as playing games.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#experience" class="btn btn-secondary">
+              <span>Career Journey</span>
+            </a>
+            <button class="btn btn-glass" id="copy-email-btn" data-email="imadibrahim164@gmail.com">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Email</span>
+            </button>
+          </div>
+
+          <!-- Hero Metrics Bar -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-number" data-target="4">4+</span>
+              <span class="metric-label">Years of Craft</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number" data-target="26">26+</span>
+              <span class="metric-label">Shipped Repos</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number" data-target="4">4</span>
+              <span class="metric-label">Integrated Analytics SDKs</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number" data-target="100">100%</span>
+              <span class="metric-label">Native iOS Focus</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Floating Tech Card -->
+        <div class="hero-visual">
+          <div class="code-window-card">
+            <div class="window-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="window-title">ImadIbrahim.swift — Lascade</span>
+              <span class="window-badge">Swift 6.0</span>
+            </div>
+            <div class="window-body">
+              <pre><code><span class="kw">import</span> <span class="type">SwiftUI</span>
+<span class="kw">import</span> <span class="type">Adapty</span>
+<span class="kw">import</span> <span class="type">Mixpanel</span>
+
+<span class="kw">struct</span> <span class="type">LeadEngineer</span> {
+    <span class="kw">let</span> name = <span class="str">"Imad Ibrahim"</span>
+    <span class="kw">let</span> role = <span class="str">"iOS Lead @ Lascade"</span>
+    <span class="kw">let</span> location = <span class="str">"Kerala, India"</span>
+    
+    <span class="kw">var</span> passions: [<span class="type">String</span>] = [
+        <span class="str">"SwiftUI & MVVM"</span>,
+        <span class="str">"App Monetization & Paywalls"</span>,
+        <span class="str">"Micro-animations & Fluid UI"</span>,
+        <span class="str">"Zero-Cold-Start Services"</span>
+    ]
+
+    <span class="kw">func</span> <span class="func">code</span>() -> <span class="type">Mindset</span> {
+        <span class="kw">return</span> .<span class="prop">playingGamesWithPrecision</span>
+    }
+}</code></pre>
+            </div>
+            <div class="window-footer">
+              <div class="live-pulse-chip">
+                <span class="tiny-dot"></span>
+                <span>Active Sprint in Progress</span>
+              </div>
+              <div class="tech-tags-mini">
+                <span>SwiftUI</span>
+                <span>Adapty</span>
+                <span>Clarity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Passion for engineering excellence & creative software.</h2>
+          <p class="section-subtitle">Bridging rigorous native architecture with delightful human experiences.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel main-bio">
+            <div class="bio-avatar-row">
+              <div class="avatar-ring">
+                <img src="https://avatars.githubusercontent.com/u/119976083?v=4" alt="Imad Ibrahim" class="avatar-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80'">
+              </div>
+              <div class="avatar-text">
+                <h3>Imad Ibrahim</h3>
+                <p class="bio-title">iOS Lead at Lascade • Kerala, India</p>
+                <div class="bio-links">
+                  <a href="https://github.com/imadibrahimk" target="_blank" rel="noopener" class="bio-social-icon" title="GitHub">
+                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/imadibrahimk/" target="_blank" rel="noopener" class="bio-social-icon" title="LinkedIn">
+                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  </a>
+                  <a href="https://stackoverflow.com/users/19323608" target="_blank" rel="noopener" class="bio-social-icon" title="Stack Overflow">
+                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M15.725 0l-1.72 1.277 6.39 8.588 1.716-1.277L15.725 0zm-3.94 4.542l-1.393 1.625 8.945 7.674 1.394-1.625-8.946-7.674zm-2.97 5.485l-.946 1.936 10.985 5.375.946-1.936-10.985-5.375zm-1.76 6.136l-.38 2.115 12.222 2.195.38-2.115-12.222-2.195zm-.76 5.837h12.5v-2h-12.5v2zm14.5-3.5v7.5h-16.5v-7.5h-2v9.5h20.5v-9.5h-2z"/></svg>
+                  </a>
+                  <a href="mailto:imadibrahim164@gmail.com" class="bio-social-icon" title="Email">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <p class="bio-paragraph">
+              I lead mobile engineering initiatives with a deep emphasis on native elegance, rock-solid stability, and data-informed product velocity. My core philosophy is that <em>coding is like playing games</em>: challenging puzzles that yield immense satisfaction when conquered with elegant, maintainable architecture.
+            </p>
+            <p class="bio-paragraph">
+              Beyond iOS, I explore AI-driven developer workflows, zero-cold-start cloud runtimes, and real-time database indexing. Whether it's crafting custom paywalls with <strong>Adapty</strong>, implementing recursive conversion helpers for <strong>Mixpanel</strong>, or optimizing render loops, I thrive at the junction of performance and polish.
+            </p>
+          </div>
+
+          <!-- Quick Highlights / Superpowers -->
+          <div class="about-highlights">
+            <div class="highlight-card glass-panel">
+              <div class="highlight-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <div class="highlight-info">
+                <h4>Native iOS Architecture</h4>
+                <p>SwiftUI MVVM, custom coordinators, modular services, memory profiling, and smooth 120Hz ProMotion transitions.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card glass-panel">
+              <div class="highlight-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <div class="highlight-info">
+                <h4>Monetization & Growth</h4>
+                <p>Dynamic paywall strategies with Adapty, in-app purchases, subscription lifecycles, and high-converting checkout flows.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card glass-panel">
+              <div class="highlight-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2">
+                  <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                  <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                </svg>
+              </div>
+              <div class="highlight-info">
+                <h4>Multi-SDK Analytics Pipelines</h4>
+                <p>Telemetry pipelines across Mixpanel, Microsoft Clarity, Firebase, and Meta with recursive property serialization.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREER EXPERIENCE TIMELINE -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career Journey</span>
+          <h2 class="section-title">Where I've built & led.</h2>
+          <p class="section-subtitle">A chronological track record of leadership, architectural decisions, and production impact.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: Lascade -->
+          <div class="timeline-item current">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">iOS Lead</h3>
+                  <span class="company-name">Lascade</span>
+                </div>
+                <div class="role-badge active">2025 — Present</div>
+              </div>
+              <p class="role-desc">
+                Serving as the technical lead for iOS engineering across client-facing products and core mobile infrastructure.
+              </p>
+              <ul class="role-bullets">
+                <li>Architecting native applications using <strong>SwiftUI, Combine, and modern Swift concurrency</strong> with clean separation of concerns.</li>
+                <li>Spearheading monetization architecture utilizing <strong>Adapty</strong> for dynamic paywalls, remote configurations, and subscription analytics.</li>
+                <li>Designing end-to-end multi-provider analytics integrations (Mixpanel, Microsoft Clarity session capture, Firebase, Meta) for unified funnel insights.</li>
+                <li>Mentoring development teams, enforcing code quality standards, and directing CI/CD test automation for accelerated release cycles.</li>
+              </ul>
+              <div class="role-tags">
+                <span class="badge">SwiftUI</span>
+                <span class="badge">Combine</span>
+                <span class="badge">Adapty</span>
+                <span class="badge">Mixpanel</span>
+                <span class="badge">Architecture</span>
+                <span class="badge">Leadership</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Alforia Pvt Ltd -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">iOS Developer & Software Engineer</h3>
+                  <span class="company-name">Alforia Pvt Ltd</span>
+                </div>
+                <div class="role-badge">2023 — 2025</div>
+              </div>
+              <p class="role-desc">
+                Engineered robust mobile products, implemented core networking layers, and built custom backend support utilities.
+              </p>
+              <ul class="role-bullets">
+                <li>Developed modular iOS views and reusable UI component libraries following atomic design principles.</li>
+                <li>Implemented guest-to-authenticated user synchronization workflows and persistent secure storage layers.</li>
+                <li>Engineered real-time data synchronizations and REST API client pipelines with automated error recovery.</li>
+                <li>Collaborated across product designers and backend teams to deliver high-converting user onboarding funnels.</li>
+              </ul>
+              <div class="role-tags">
+                <span class="badge">Swift</span>
+                <span class="badge">UIKit / SwiftUI</span>
+                <span class="badge">REST APIs</span>
+                <span class="badge">Data Management</span>
+                <span class="badge">Git</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Open Source & Creative Engineering -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Independent Software Engineer & Open Source Creator</h3>
+                  <span class="company-name">Self-Directed / GitHub Community</span>
+                </div>
+                <div class="role-badge">2022 — Present</div>
+              </div>
+              <p class="role-desc">
+                Created over 25 public repositories spanning cloud keep-alive daemons, MongoDB full-text search engines, Python web scrapers, and interactive UI experiments.
+              </p>
+              <ul class="role-bullets">
+                <li>Built <strong>RenderKeepAlive</strong> in Deno & TypeScript to eliminate spin-down latency on serverless container hosting.</li>
+                <li>Developed <strong>MongoDB-Autocomplete-Search</strong> delivering sub-50ms instant query suggestions over Express.</li>
+                <li>Authored Python financial intelligence extractors with automated structured reporting.</li>
+              </ul>
+              <div class="role-tags">
+                <span class="badge">Deno / TypeScript</span>
+                <span class="badge">Python</span>
+                <span class="badge">MongoDB</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">Open Source</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SHOWCASE -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Engineered for performance & polish.</h2>
+          <p class="section-subtitle">Select projects spanning native mobile apps, cloud resilience daemons, and full-stack utilities.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="project-filters">
+          <button class="filter-tab active" data-filter="all">All Projects</button>
+          <button class="filter-tab" data-filter="ios">iOS & SwiftUI</button>
+          <button class="filter-tab" data-filter="cloud">Cloud & Backend</button>
+          <button class="filter-tab" data-filter="tools">Web & Scraping</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Populated dynamically via script.js for interactive modal support and filtering -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Engineering Arsenal</span>
+          <h2 class="section-title">Technologies & Core Competencies.</h2>
+          <p class="section-subtitle">Tools, frameworks, and architectural principles applied in daily production.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1 -->
+          <div class="skill-category-card glass-panel">
+            <div class="cat-header">
+              <div class="cat-icon ios-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 20.94c1.88-1.55 3-3.6 3-6.04 0-4.42-3.58-8-8-8-.62 0-1.22.07-1.8.2.8 1.15 1.3 2.53 1.3 4.04 0 3.73-2.91 6.78-6.5 6.98.54 1.1 1.25 2.08 2.08 2.92"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>iOS & Apple Ecosystem</h3>
+                <span class="cat-subtitle">Primary Domain</span>
+              </div>
+            </div>
+            <div class="skills-tags-cloud">
+              <span class="skill-tag highlight">Swift 6.0</span>
+              <span class="skill-tag highlight">SwiftUI</span>
+              <span class="skill-tag highlight">UIKit</span>
+              <span class="skill-tag">MVVM Architecture</span>
+              <span class="skill-tag">Combine</span>
+              <span class="skill-tag">CoreData / SwiftData</span>
+              <span class="skill-tag">Xcode Instruments</span>
+              <span class="skill-tag">Memory Profiling</span>
+              <span class="skill-tag">TestFlight CI/CD</span>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="skill-category-card glass-panel">
+            <div class="cat-header">
+              <div class="cat-icon growth-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3>Monetization & Analytics</h3>
+                <span class="cat-subtitle">Conversion & Telemetry</span>
+              </div>
+            </div>
+            <div class="skills-tags-cloud">
+              <span class="skill-tag highlight">Adapty Paywalls</span>
+              <span class="skill-tag highlight">Mixpanel SDK</span>
+              <span class="skill-tag highlight">Microsoft Clarity</span>
+              <span class="skill-tag">Firebase Core</span>
+              <span class="skill-tag">Meta App Events</span>
+              <span class="skill-tag">In-App Purchases (IAP)</span>
+              <span class="skill-tag">Funnel Optimization</span>
+              <span class="skill-tag">A/B Testing</span>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skill-category-card glass-panel">
+            <div class="cat-header">
+              <div class="cat-icon cloud-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Backend & Cloud Services</h3>
+                <span class="cat-subtitle">Services & Databases</span>
+              </div>
+            </div>
+            <div class="skills-tags-cloud">
+              <span class="skill-tag highlight">Deno / TypeScript</span>
+              <span class="skill-tag highlight">Node.js / Express</span>
+              <span class="skill-tag highlight">MongoDB Atlas</span>
+              <span class="skill-tag">Python & Django</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">Render Cloud</span>
+              <span class="skill-tag">Web Scraping</span>
+              <span class="skill-tag">JSON / Data Aggregations</span>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="skill-category-card glass-panel">
+            <div class="cat-header">
+              <div class="cat-icon tools-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div>
+                <h3>Engineering Practices</h3>
+                <span class="cat-subtitle">Workflows & Craft</span>
+              </div>
+            </div>
+            <div class="skills-tags-cloud">
+              <span class="skill-tag highlight">Git & GitHub Flow</span>
+              <span class="skill-tag">Clean Architecture</span>
+              <span class="skill-tag">Code Review & Mentorship</span>
+              <span class="skill-tag">Performance Tuning</span>
+              <span class="skill-tag">Micro-Interactions</span>
+              <span class="skill-tag">Agile / Sprint Planning</span>
+              <span class="skill-tag">Continuous Delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & HIRE ME SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card glass-panel">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <span class="section-tag">Let's Connect</span>
+              <h2 class="contact-title">Let’s build something extraordinary together.</h2>
+              <p class="contact-subtitle">
+                Whether you have an iOS initiative in mind, need architectural leadership, or want to discuss modern SwiftUI patterns, my inbox is always open.
+              </p>
+
+              <div class="contact-detail-items">
+                <div class="contact-item">
+                  <div class="c-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div>
+                    <span class="c-label">Direct Email</span>
+                    <a href="mailto:imadibrahim164@gmail.com" class="c-val">imadibrahim164@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="c-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  </div>
+                  <div>
+                    <span class="c-label">Location</span>
+                    <span class="c-val">Kerala, India (Open to Remote Globally)</span>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="c-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  </div>
+                  <div>
+                    <span class="c-label">Response Time</span>
+                    <span class="c-val">Within 24 Hours</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="social-bar">
+                <a href="https://github.com/imadibrahimk" target="_blank" rel="noopener" class="social-pill" title="GitHub Profile">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>imadibrahimk</span>
+                </a>
+                <a href="https://www.linkedin.com/in/imadibrahimk/" target="_blank" rel="noopener" class="social-pill" title="LinkedIn Profile">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://stackoverflow.com/users/19323608" target="_blank" rel="noopener" class="social-pill" title="Stack Overflow">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M15.725 0l-1.72 1.277 6.39 8.588 1.716-1.277L15.725 0zm-3.94 4.542l-1.393 1.625 8.945 7.674 1.394-1.625-8.946-7.674zm-2.97 5.485l-.946 1.936 10.985 5.375.946-1.936-10.985-5.375zm-1.76 6.136l-.38 2.115 12.222 2.195.38-2.115-12.222-2.195zm-.76 5.837h12.5v-2h-12.5v2zm14.5-3.5v7.5h-16.5v-7.5h-2v9.5h20.5v-9.5h-2z"/></svg>
+                  <span>Stack Overflow</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Direct Quick Message Form -->
+            <div class="contact-form-panel">
+              <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                  <label for="contact-name">Your Name</label>
+                  <input type="text" id="contact-name" placeholder="Steve Jobs" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email Address</label>
+                  <input type="email" id="contact-email" placeholder="steve@apple.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-subject">Topic / Subject</label>
+                  <input type="text" id="contact-subject" placeholder="iOS Project Architecture / Full-time Opportunity" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-message">Message</label>
+                  <textarea id="contact-message" rows="4" placeholder="Hi Imad, let's discuss building our next iOS application..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-full" id="send-msg-btn">
+                  <span>Send Message Directly</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-logo">Imad Ibrahim</span>
+        <span class="footer-desc">iOS Lead • SwiftUI Architect • Creative Developer</span>
+      </div>
+      <div class="footer-right">
+        <span>© 2026 Imad Ibrahim. Built with precision & vanilla technologies.</span>
+        <a href="#hero" class="back-to-top" title="Back to top">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAIL MODAL -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true">
+    <div class="modal-dialog glass-panel" role="dialog" aria-modal="true">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-body" id="modal-content">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE CLI TERMINAL DRAWER -->
+  <div class="terminal-drawer" id="terminal-drawer" aria-hidden="true">
+    <div class="terminal-window">
+      <div class="terminal-bar">
+        <div class="terminal-dots">
+          <span class="dot red" id="terminal-close-dot"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <span class="terminal-title">imad@developer-rig:~ (zsh)</span>
+        <button class="terminal-close" id="terminal-close-btn">&times;</button>
+      </div>
+      <div class="terminal-content" id="terminal-content">
+        <div class="terminal-output" id="terminal-output">
+          <div class="term-line welcome">Welcome to Imad Ibrahim's Interactive Developer Terminal.</div>
+          <div class="term-line hint">Type <span class="term-cmd">help</span> to explore available commands or <span class="term-cmd">hire</span> for instant connection.</div>
+        </div>
+        <form class="terminal-input-row" id="terminal-form">
+          <span class="term-prompt">imad@lascade:~$</span>
+          <input type="text" id="terminal-input" class="term-input" autocomplete="off" spellcheck="false" autofocus>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast">Email address copied to clipboard!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
