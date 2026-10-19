@@ -851,9 +851,10 @@ body {
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 36px 1fr;
+  grid-template-columns: 36px minmax(0, 1fr);
   gap: 2rem;
   position: relative;
+  min-width: 0;
 }
 
 .timeline-marker {
@@ -890,6 +891,9 @@ body {
 
 .timeline-content {
   padding: 2.25rem;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .timeline-header {
@@ -989,6 +993,9 @@ body {
   border-radius: var(--radius-lg);
   backdrop-filter: blur(14px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .fleet-header {
@@ -1125,6 +1132,9 @@ body {
   margin-top: 1.25rem;
   padding-top: 1.15rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .fleet-matrix-header {
@@ -1149,12 +1159,38 @@ body {
   gap: 0.35rem;
 }
 
+.matrix-scroll-hint {
+  display: none;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--accent-cyan);
+}
+
 .fleet-matrix-table-scroll {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   margin-top: 0.5rem;
   border-radius: var(--radius-md);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.fleet-matrix-table-scroll::-webkit-scrollbar {
+  height: 5px;
+}
+
+.fleet-matrix-table-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+}
+
+.fleet-matrix-table-scroll::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.3);
+  border-radius: 4px;
 }
 
 .fleet-matrix-table {
@@ -2254,25 +2290,46 @@ a.c-val:hover {
   /* Career Timeline on Mobile */
   .timeline {
     gap: 1.5rem;
+    width: 100%;
   }
 
   .timeline-item {
-    grid-template-columns: 16px 1fr !important;
-    gap: 1rem !important;
+    grid-template-columns: 14px minmax(0, 1fr) !important;
+    gap: 0.85rem !important;
+    min-width: 0 !important;
   }
 
   .marker-dot {
-    width: 16px;
-    height: 16px;
-    margin-top: 1.25rem;
+    width: 14px;
+    height: 14px;
+    margin-top: 1.15rem;
+  }
+
+  .marker-line {
+    top: 2rem;
+    bottom: -2rem;
   }
 
   .timeline-content {
-    padding: 1.5rem 1.15rem !important;
+    padding: 1.25rem 1rem !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.45rem;
+    margin-bottom: 0.85rem;
   }
 
   .role-title {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
+    line-height: 1.35;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   .company-name {
@@ -2285,18 +2342,164 @@ a.c-val:hover {
   }
 
   .role-desc {
-    font-size: 0.92rem;
+    font-size: 0.9rem;
     line-height: 1.55;
+    margin-bottom: 1rem;
+    overflow-wrap: break-word;
+  }
+
+  .role-bullets {
+    gap: 0.65rem;
+    margin-bottom: 1.25rem;
   }
 
   .role-bullets li {
-    font-size: 0.88rem;
+    font-size: 0.86rem;
     line-height: 1.55;
-    padding-left: 1.25rem;
+    padding-left: 1.15rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .role-bullets code {
+    font-size: 0.8em;
+    word-break: break-all;
+  }
+
+  /* Fleet Box & Components on Mobile */
+  .fleet-box {
+    margin-top: 1.25rem;
+    padding: 1rem 0.85rem !important;
+    border-radius: var(--radius-md) !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .fleet-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.45rem;
+    margin-bottom: 1rem;
+  }
+
+  .fleet-title {
+    font-size: 0.92rem;
+    line-height: 1.35;
+  }
+
+  .fleet-badge-live {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .fleet-core-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.6rem !important;
+    margin-bottom: 1.25rem;
+  }
+
+  .fleet-core-item {
+    padding: 0.75rem 0.85rem !important;
+    box-sizing: border-box;
+  }
+
+  .fleet-core-name {
+    font-size: 0.85rem;
+    gap: 0.5rem;
+    line-height: 1.35;
+  }
+
+  .fleet-core-name span {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .fleet-core-type {
+    font-size: 0.7rem;
+  }
+
+  .fleet-pills-category {
+    gap: 0.75rem;
+  }
+
+  .fleet-cat-label {
+    font-size: 0.72rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .fleet-pills {
+    gap: 0.35rem;
+  }
+
+  .fleet-pill {
+    font-size: 0.74rem;
+    padding: 0.22rem 0.55rem;
+    line-height: 1.3;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+  }
+
+  .fleet-matrix-wrap {
+    margin-top: 1rem;
+    padding-top: 0.85rem;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .fleet-matrix-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .private-repo-badge {
+    font-size: 0.68rem;
+    padding: 0.18rem 0.5rem;
+  }
+
+  .matrix-scroll-hint {
+    display: inline-block;
+  }
+
+  .fleet-matrix-table-scroll {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 0.5rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .fleet-matrix-table {
+    min-width: 480px;
+    font-size: 0.78rem;
+  }
+
+  .fleet-matrix-table th,
+  .fleet-matrix-table td {
+    padding: 0.55rem 0.75rem;
+  }
+
+  .fleet-footer-note {
+    font-size: 0.78rem;
+    gap: 0.45rem;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    line-height: 1.45;
   }
 
   .role-tags {
-    gap: 0.4rem;
+    gap: 0.35rem;
+    margin-top: 1.15rem;
+  }
+
+  .role-tags .badge {
+    font-size: 0.74rem;
+    padding: 0.22rem 0.55rem;
   }
 
   /* Projects Showcase on Mobile */
@@ -2470,6 +2673,34 @@ a.c-val:hover {
   .btn {
     padding: 0.75rem 1rem;
     font-size: 0.9rem;
+  }
+
+  /* Extra tight phone screen tuning */
+  .timeline-item {
+    grid-template-columns: 12px minmax(0, 1fr) !important;
+    gap: 0.65rem !important;
+  }
+
+  .marker-dot {
+    width: 12px;
+    height: 12px;
+    margin-top: 1.05rem;
+  }
+
+  .timeline-content {
+    padding: 1.1rem 0.8rem !important;
+  }
+
+  .fleet-box {
+    padding: 0.85rem 0.65rem !important;
+  }
+
+  .role-title {
+    font-size: 1.05rem;
+  }
+
+  .fleet-matrix-table {
+    min-width: 440px;
   }
 }
 
