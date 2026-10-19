@@ -50,8 +50,8 @@ const PROJECTS = [
     title: 'Flightpoints — Award Flights (App Store)',
     category: 'ios',
     categoryLabel: 'Native iOS • Live on App Store',
-    summary: 'Flagship native iOS travel application published on the Apple App Store (ID: 6756680456). Engineered with SwiftUI, modern MVVM, dynamic Adapty paywalls, Mixpanel, Microsoft Clarity, Firebase, Meta tracking, and high-performance flight search caching.',
-    tags: ['SwiftUI', 'UIKit', 'App Store Live', 'Adapty Paywalls', 'Mixpanel SDK', 'Microsoft Clarity', 'Firebase', 'MVVM'],
+    summary: 'Flagship native iOS travel application published on the Apple App Store (ID: 6756680456). Engineered with 100% pure SwiftUI, modern MVVM, dynamic Adapty paywalls, Mixpanel, Microsoft Clarity, Firebase, Meta tracking, and high-performance flight search caching.',
+    tags: ['Pure SwiftUI', 'App Store Live', 'Adapty Paywalls', 'Mixpanel SDK', 'Microsoft Clarity', 'Firebase', 'MVVM'],
     link: 'https://apps.apple.com/app/id6756680456',
     linkLabel: 'View on App Store',
     isInstagram: false,
@@ -89,7 +89,7 @@ const PROJECTS = [
     category: 'ios',
     categoryLabel: 'Enterprise Fleet Architecture & Design System',
     summary: 'Architecting and managing 15+ live iOS travel apps on the Apple App Store (Hotel70, Rent80, Flights70, Flightpoints, etc.). Built the unified "Design Space" component architecture, and currently engineering sensory haptic feedback, fluid micro-interactions, and Adapty revenue optimization.',
-    tags: ['15+ App Store Apps', 'Unified Design Space', 'SwiftUI', 'UIKit', 'Sensory Haptics', 'Adapty Revenue', 'Mixpanel', 'Travel Tech'],
+    tags: ['15+ App Store Apps', 'Unified Design Space', 'Pure SwiftUI', 'Sensory Haptics', 'Adapty Revenue', 'Mixpanel', 'Travel Tech'],
     link: 'https://apps.apple.com/app/id6756680456',
     linkLabel: 'View Flightpoints on App Store',
     isInstagram: false,
@@ -120,8 +120,8 @@ const PROJECTS = [
 +-------------------------------------------------------------+`,
     highlights: [
       'Managing the architecture, release cadence, and performance across 15+ live iOS applications in the Apple App Store.',
-      'Core focus applications live on App Store: Flightpoints (ID: 6756680456), Hotel70 (ID: 6498233255), Rent80 (ID: 6472572506), Flights70 (ID: 6479599821), and Hotel Discounts・Booking App.',
-      'Spearheaded and successfully deployed the Unified Design Space, eliminating cross-app UI fragmentation with reusable SwiftUI/UIKit components.',
+      'Core focus applications live on App Store: Flightpoints (ID: 6756680456), Hotel70 (ID: 6498233255), Rent80 (ID: 6472572506), Flights70 (ID: 6479599821), and Hotel Discounts (ID: 1575411137).',
+      'Spearheaded and successfully deployed the Unified Design Space, eliminating cross-app UI fragmentation with reusable 100% pure SwiftUI components (no UIKit).',
       'Currently engineering ultra-fluid micro-interactions and tactile sensory haptic feedback to maximize session engagement and user delight.',
       'Optimizing revenue conversion funnels with dynamic remote Adapty paywalls and deep multi-provider telemetry pipelines.'
     ]
@@ -409,7 +409,7 @@ function initTypewriter() {
     'Fleet Architect (15+ App Store Apps).',
     'Head of AI Model Creation.',
     'Unified Design Space & Haptic Engineer.',
-    'SwiftUI & UIKit Master.'
+    'Pure SwiftUI Architect.'
   ];
 
   let roleIdx = 0;
@@ -638,8 +638,8 @@ Philosophy: "Coding is like playing games."
     experience: () => `
 [2025 - Present] iOS Lead — 15+ App Store Fleet @ Lascade
   - Managing architecture & release cadence for 15+ live iOS travel apps on the Apple App Store.
-  - Core focus live on App Store: Flightpoints (ID: 6756680456), Hotel70 (ID: 6498233255), Rent80 (ID: 6472572506), Flights70 (ID: 6479599821).
-  - Standardized the Unified Design Space (voice & shared UI components) across all 15+ apps.
+  - Core focus live on App Store: Flightpoints (ID: 6756680456), Hotel70 (ID: 6498233255), Rent80 (ID: 6472572506), Flights70 (ID: 6479599821), Hotel Discounts (ID: 1575411137).
+  - Standardized the Unified Design Space with 100% pure SwiftUI architecture (no UIKit).
   - Currently engineering ultra-fluid micro-interactions, sensory haptics, and Adapty revenue funnels.
 
 [2023 - 2025] Head of AI Model Creation & Mobile Developer @ Alforia Pvt Ltd
@@ -660,16 +660,17 @@ Philosophy: "Coding is like playing games."
 2. Hotel70 (App Store)           -> Core hotel booking app (App Store ID: 6498233255)
 3. Rent80 (App Store)            -> Core car rental app (App Store ID: 6472572506)
 4. Flights70 (App Store)         -> Core airfare search app (App Store ID: 6479599821)
-5. Lascade 15+ App Store Fleet   -> Unified Design Space, fluid haptics & 15+ travel apps
-6. Aswathy Achu AI               -> Kerala's 1st realistic virtual AI influencer (@aswathy_achu.ai)
-7. TinkerSpace Digital Kiosk     -> Foundational Smart TV signage kiosk (now community maintained)
-8. Real-Time Chat App            -> React Native WebSocket chat platform
-9. RenderKeepAlive               -> 24/7 Deno zero-cold-start cloud daemon
-10. MongoDB-Autocomplete-Search  -> Sub-50ms fuzzy suggestions over Express
-11. StockSymbolScraper           -> Screener.in financial parser & PDF engine
+5. Hotel Discounts (App Store)   -> Core discount hotel app (App Store ID: 1575411137)
+6. Lascade 15+ App Store Fleet   -> Unified Design Space, 100% SwiftUI, fluid haptics & 15+ apps
+7. Aswathy Achu AI               -> Kerala's 1st realistic virtual AI influencer (@aswathy_achu.ai)
+8. TinkerSpace Digital Kiosk     -> Foundational Smart TV signage kiosk (now community maintained)
+9. Real-Time Chat App            -> React Native WebSocket chat platform
+10. RenderKeepAlive              -> 24/7 Deno zero-cold-start cloud daemon
+11. MongoDB-Autocomplete-Search  -> Sub-50ms fuzzy suggestions over Express
+12. StockSymbolScraper           -> Screener.in financial parser & PDF engine
 `,
     skills: () => `
-iOS & Fleet     : 15+ App Store Apps, SwiftUI, UIKit, Swift 6.0, MVVM, Combine, CoreData
+iOS & Fleet     : 15+ App Store Apps, 100% Pure SwiftUI (No UIKit), Swift 6.0, MVVM, Combine
 Design Space    : Unified Component Systems, Shared Design Tokens, Multi-App Consistency
 Sensory & Motion: UIImpactFeedbackGenerator, CoreHaptics, Fluid Micro-Interactions, 120Hz ProMotion
 Generative AI   : Automatic1111 (A1111), LoRA Training, Stable Diffusion, Face Consistency, AI Video
